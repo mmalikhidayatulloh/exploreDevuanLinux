@@ -1,6 +1,6 @@
 # Install
 ```
-$ sudo apt-get install nitrogen picom git dwm suckless-tools
+$ sudo apt-get install nitrogen picom git dwm suckless-tools libxinerama-dev libxft-dev libx11-dev
 ```
 # edit /etc/apt/source.list
 ```
@@ -25,4 +25,11 @@ nitrogen --restore &
 # Enable tap to click
 ```
 $ xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+```
+# Install st
+```
+cd .config/suckless/
+git clone https://git.suckless.org/st
+cd st
+sudo make clean install
 ```
