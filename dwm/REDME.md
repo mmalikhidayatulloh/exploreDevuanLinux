@@ -18,9 +18,10 @@ $ cp /etc/X11/xinit/xinitrc .xinitrc
 $ vim .xinitrc
 ```
 ```
-exec dwm
 picom -f &
 nitrogen --restore &
+xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1 &
+exec dwm
 ```
 # Enable tap to click
 ```
@@ -44,3 +45,17 @@ static const char *termcmd[]  = { "st", NULL };
 cp config.deff.h config.h
 sudo make clean install
 ```
+# Uninstall xorg and xfce4 slim
+```
+sudo apt-get purge xorg xfce4 xfce4-goodies slim
+```
+# Install xorg
+```
+sudo apt-get install xorg
+```
+# Setting picom
+comment (#) on
+```
+vrsync = true
+```
+reboot
