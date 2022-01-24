@@ -1,5 +1,5 @@
 # Downloads patch
-downloads from https://dwm.suckless.org/patches/fullgaps/
+downloads from https://dwm.suckless.org/patches/
 # Install patch
 ```
 patch < dwm-fullgaps-6.2.diff
