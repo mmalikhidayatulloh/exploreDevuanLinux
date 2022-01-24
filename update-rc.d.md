@@ -1,14 +1,12 @@
-Insert links using the defaults:
+# Enable a service:
 ```
-update-rc.d foobar defaults
+update-rc.d mysql enable
 ```
-The equivalent dependency header would have start and stop dependencies on $remote_fs and $syslog, and start in runlevels 2-5 and stop in  run‐levels 0, 1 and 6.
-
-Remove  all  links  for  a script (assuming foobar has been deleted already):
+# Disable a service:
 ```
-update-rc.d foobar remove
+update-rc.d mysql disable
 ```
-Example of disabling a service:
+# Forcibly remove a service:
 ```
-update-rc.d foobar disable
+update-rc.d -f mysql remove 
 ```
