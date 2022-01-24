@@ -92,3 +92,20 @@ sumber https://wiki.debian.org/ZRam
 ```
 reboot
 ```
+# Install build essential
+```
+sudo apt install build-essential dkms linux-headers-$(uname -r)
+```
+# Install restricted extras
+```
+sudo apt install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi
+```
+# Install msfont compatibility
+```
+sudo apt install fonts-crosextra-carlito fonts-crosextra-caladea
+```
+# Install tlp
+```
+sudo apt install tlp
+sudo tlp start
+```
