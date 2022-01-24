@@ -22,3 +22,7 @@ exec dwm
 picom -f &
 nitrogen --restore &
 ```
+# Enable tap to click
+```
+$ xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+```
