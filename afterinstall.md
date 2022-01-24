@@ -88,3 +88,7 @@ $ sudo chmod +x /etc/init.d/zram
 $ sudo apt-get install insserv
 $ sudo insserv zram
 ```
+sumber https://wiki.debian.org/ZRam
+```
+reboot
+```
