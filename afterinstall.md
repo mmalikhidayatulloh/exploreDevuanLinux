@@ -16,3 +16,9 @@ If it is pointing to systemd or upstart, I get my answer. If it is not a symboli
 ```
 dpkg -S /sbin/init
 ```
+# remove swapfile
+```
+$ sudo swapoff /swapfile
+$ sudo rm /swapfile
+```
+delete swapfile on `/etc/fstab`
