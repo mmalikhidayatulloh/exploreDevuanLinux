@@ -109,3 +109,5 @@ sudo apt install fonts-crosextra-carlito fonts-crosextra-caladea
 sudo apt install tlp
 sudo tlp start
 ```
+# Setting chromium
+https://docs.microsoft.com/en-us/microsoftteams/troubleshoot/teams-sign-in/sign-in-loop#resolution
