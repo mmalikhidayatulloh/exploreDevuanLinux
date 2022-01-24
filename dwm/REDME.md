@@ -33,3 +33,14 @@ git clone https://git.suckless.org/st
 cd st
 sudo make clean install
 ```
+```
+cd .config/suckless/dwm-6.1/
+vim config.deff.h
+```
+```
+static const char *termcmd[]  = { "st", NULL };
+```
+```
+cp config.deff.h config.h
+sudo make clean install
+```
