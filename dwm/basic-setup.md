@@ -11,7 +11,7 @@ sudo update-rc.d slim disable
 ```
 # Install requirement
 ```
-$ sudo apt-get install nitrogen picom git suckless-tools libxinerama-dev libxft-dev libx11-dev
+sudo apt-get install nitrogen picom git suckless-tools libxinerama-dev libxft-dev libx11-dev
 ```
 # Clone dwm
 ```
@@ -34,8 +34,8 @@ sudo make clean install
 ```
 # Edit .xinitrc file
 ```
-$ cp /etc/X11/xinit/xinitrc .xinitrc
-$ vim .xinitrc
+cp /etc/X11/xinit/xinitrc .xinitrc
+vim .xinitrc
 ```
 ```
 picom -f &
@@ -43,13 +43,9 @@ nitrogen --restore &
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1 &
 exec dwm
 ```
-# Enable tap to click
-```
-$ xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
-```
 # Install xorg
 ```
-sudo apt-get install xorg
+sudo apt-get install xorg xinput
 ```
 # Setting picom
 comment (#) on
