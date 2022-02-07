@@ -2,7 +2,7 @@
 downloads from https://dwm.suckless.org/patches/
 # Install patch
 ```
-patch < dwm-fullgaps-6.2.diff
+patch -p1 < dwm-fullgaps-6.2.diff
 ```
 # Fix error
 ```
@@ -16,3 +16,7 @@ sudo cp config.def.h config.h
 sudo make clean install
 ```
 restart dwm
+# remove
+```
+patch -R < dwm-fullgaps-6.2.diff
+```
