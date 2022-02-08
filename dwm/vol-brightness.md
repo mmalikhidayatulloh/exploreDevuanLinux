@@ -1,3 +1,7 @@
+# Install xbacklight
+```
+sudo apt-get install xbacklight
+```
 # Setting xbacklight
 ```
 /etc/X11/xorg.conf.d/20-intel.conf
